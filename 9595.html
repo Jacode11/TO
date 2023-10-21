@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9595</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom-style.css">
+    <link rel="stylesheet" href="lightbox.css">
+    <script src="https://kit.fontawesome.com/24c930b8df.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h6><img src="img/plastep_logo.png" alt="optimus"><span class="highlight"></span></h6>
+            </div>
+            <div id="google">
+                <h4><img src="img/googles-new-logo.gif" alt="google"></h4>
+            </div>    
+            <nav>
+               <div class="search-box">
+                  <div class="Row">
+                    <input type="text" id="inbut-box" class="query" value="" placeholder ="Etsi" autocomplete="off" required>
+                    <button class="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                  </div>
+                  <div class="result-box">
+                  </div>
+               </div>
+            </nav>
+            <script>
+                let query = document.querySelector('.query');
+                let searchBtn = document.querySelector('.searchBtn');
+
+                searchBtn.onclick = function(){
+                    let url ='https://www.google.com/search?q=' + query.value;
+                    window.open(url,'_self');
+                }
+            </script>
+        </div> 
+<script src="autocomplete.js"></script>      
+    </header>
+
+    <section id="main">
+       
+        <div id="main1">      
+            <div class="box">
+                      
+                <h4>TIEDOT</h4>
+                <p>
+                    Tuotenumero:162571,162572,162573  <br>
+                    Nimi:VT matalat <br>
+                    Muottinumero: 9595 lavanum. 124    <br>
+                    Vaihtopalat: EI      <br>
+                    Raaka-Aine: 231026 Ultraform Pom /V2<br>
+                    Kuivaus: Ei<br>
+                    Väri: 502012 (evac harmaa) /<br>
+                    Muistipaikka:              <br>
+                    Asiakas: Kokoonpano<br>
+                    Hyllynumero: kokoonpano rullakko
+                </p>
+                         
+            </div>
+
+            <div class="box1">
+                      
+                <h4>OHJEET</h4>
+                <p>
+                    Muotti suoraan(muottipöydässä viiva).<br>
+                    Robotti ohjelma num.20 main vtm.<br>
+                    Robotin käpälä koneen takana kaapissa.<br>
+                    Raaka-aine paikka V2.<br>
+                    Väriannostelijasta resepti 2.<br>
+                    Seurattava tuotetta 162573,tekee palojälkeä.<br>
+                    Putsattava 4h välein.<br>
+                    Kuumakanavat: 170,180,170,200,200
+                </p>
+                <br>
+                <h4>PAKKAUS</h4>
+                <p>
+                    Menee kokoonpanoon.<br>
+                    162571 kelta/vihreä laatikko.<br>
+                    162572 harmaa laatikko.<br>
+                    162573 keltainen laatikko.<br>
+                    Laitetaan lavalle ja kun lava täynnä<br>
+                    viedään kokoonpanoon/kuitataan valmistuneeksi.
+                 </P>     
+            </div>
+
+            <div class="box2">
+                      
+                <h4>KOMMENTIT</h4>
+
+                <form action="index.php" method="post">
+                   <label for="comment">kommentti:</label>
+                   <textarea name="comment" id="comment" cols="35" rows="10"></textarea>
+                </form>
+                                           
+            </div>
+                
+        </div>   
+     
+        <aside id="sidebar">
+            <div class="box3">
+                <div class="container1">
+                
+                    <div class="row">
+                        <div class="col">
+                            <div class="feature-img">
+                                <div class="feat-img">
+                                    <img src="videos/9595.jpg" width="100%">
+                                    <img src="videos/play.png" class="play-btn" onclick="playVideo('videos/9595.mp4')">
+                                </div>
+                                <p>VT matala</p>
+                            </div>
+                        </div>
+                        <div class="col1">
+                            <div class="small-img-row">
+                                <div class="small-img">
+                                    <img src="videos/meri2.jpg">
+                                    <img src="videos/play.png" class="play-btn" onclick="playVideo('videos/meri.webm')">
+                                </div>
+                                <p>Meri</p>
+                            </div>
+                    
+                            <div class="small-img-row">
+                                <div class="small-img">
+                                   <img src="videos/video3.jpg">
+                                   <img src="videos/play.png" class="play-btn" onclick="playVideo('videos/video.mp4')">
+                                </div>
+                                <p>Video</p>
+                            </div>
+                        </div>    
+                    </div>
+
+                </div>
+            </div>
+            <div class="video-player" id="videoPlayer">
+                <video width="100%" controls autoplay id="myVideo">
+                    <source src="videos/9595.mp4" type="video/mp4">
+                </video>
+                <img src="videos/close.png" class="close-btn" onclick="stopVideo()">
+            </div> 
+        <script>
+            var videoPlayer = document.getElementById("videoPlayer");
+            var myVideo = document.getElementById("myVideo");
+
+            function stopVideo(){
+                videoPlayer.style.display = "none";
+            }
+
+            function playVideo(file){
+                myVideo.src = file;
+                videoPlayer.style.display = "block";
+
+            }
+        </script>
+
+        </div>
+
+            <div class="container2">
+                <div class="gallery">
+                    <a href="images/9595 1.jpg" data-lightbox="models" data-title="Tuote">
+                        <img src="images/9595 1.jpg">
+                    </a>
+                    <a href="images/9595.2.jpg" data-lightbox="models" data-title="Raaka-aine paikka V2">
+                        <img src="images/9595.2.jpg">
+                    </a>
+                    <a href="images/9595.3.jpg" data-lightbox="models" data-title="Käpälä">
+                        <img src="images/9595.3.jpg">
+                    </a>
+                    <a href="images/9595.4.jpg" data-lightbox="models" data-title="Robotti ohjelma">
+                        <img src="images/9595.4.jpg">
+                    </a>
+                    <a href="images/9595.5.jpg" data-lightbox="models" data-title="162571.162572">
+                        <img src="images/9595.5.jpg">
+                    </a>
+                    <a href="images/9595.6.jpg" data-lightbox="models" data-title="162573">
+                        <img src="images/9595.6.jpg">
+                    </a>
+                    <a href="images/9595.7.jpg" data-lightbox="models" data-title="Lavalle">
+                        <img src="images/9595.7.jpg">
+                    </a>
+                </div>
+            </div>
+<script src="lightbox-plus-jquery.js"></script>
+                 
+        </aside>
+   
+        <aside id="sidebar1">
+            <div class="Koodaus">
+                <table>
+                    <h4>KONEKORTTI</h4>
+                    <nav>
+                        <div class="select-menu">
+                           <div class="select-btn">
+                             <span class="sBtn-text" value="">KN16</span>
+                             <button class="searchBtn1"><i class="fa-solid fa-chevron-down"></i></button>
+                           </div> 
+                               
+                           <ul class="numbers-box">
+                            <li class="numbers">
+                                <span class="numbers-text">KN 1</span>
+                            </li>
+                            <li class="numbers">
+                                <span class="numbers-text">KN 2</span>
+                            </li>
+                            <li class="numbers">
+                                <span class="numbers-text">KN3</span>
+                            </li>
+                            <li class="numbers">
+                                <span class="numbers-text">KN6</span>
+                            </li>
+                            <li class="numbers">
+                                <span class="numbers-text">KN8.1</span>
+                            </li>
+                            <li class="numbers">
+                                <span class="numbers-text">KN10</span>
+                            </li>
+                            <li class="numbers">
+                                <span class="numbers-text">KN11</span>
+                            </li>
+                            <li class="numbers">
+                                <span class="numbers-text">KN13</span>
+                            </li>
+                            <li class="numbers">
+                                <span class="numbers-text">KN15</span>
+                            </li>
+                            <li class="numbers">
+                                <span class="numbers-text">KN16</span>
+                            </li>
+                            <li class="numbers">
+                                <span class="numbers-text">KN17</span>
+                            </li>
+                            <li class="numbers">
+                                <span class="numbers-text">KN18.1</span>
+                            </li>
+                            <li class="numbers">
+                                <span class="numbers-text">KN19</span>
+                            </li>
+                            <li class="numbers">
+                                <span class="numbers-text">KN20</span>
+                            </li>
+                            <li class="numbers">
+                                <span class="numbers-text">KN21</span>
+                            </li>
+                            <li class="numbers">
+                                <span class="numbers-text">KN22</span>
+                            </li>
+                            <li class="numbers">
+                                <span class="numbers-text">KN23</span>
+                            </li>
+                            <li class="numbers">
+                                <span class="numbers-text">KN24</span>
+                            </li>
+                           </ul>
+                        </div>
+                        <script src="Autoc.js"></script>
+                    </nav>
+                    
+            
+                    <tr>
+                        <th>Aihe</th>
+                        <th>=</th>
+                    </tr>
+                    <tr>
+                        <td>Pesäluku</td>
+                        <td>1</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Kpl paino</td>
+                        <td>-g</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Iskupaino</td>
+                        <td>74g</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Lämpö Etu</td>
+                        <td>80</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Lämpö Taka</td>
+                        <td>80</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Vast.läm.1</td>
+                        <td>180</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Vast.läm.2</td>
+                        <td>185</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Vast.läm.3</td>
+                        <td>190</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Vast.läm.4</td>
+                        <td>200</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Vast.läm.5</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Annos mm</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>Vastapaine</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>R-kierr.nop.</td>
+                        <td>75</td>
+                    </tr>
+                    <tr>
+                        <td>Niisto jälk.matka</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Niisto jälk.nopeus</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Jäähdytys aika</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Ruisk.paine</td>
+                        <td>900</tid>
+                    </tr>
+                    <tr>
+                        <td>Ruisk.paine</td>
+                        <td>-</tid>
+                    </tr>
+                    <tr>
+                        <td>Ruisk.paine</td>
+                        <td>-</tid>
+                    </tr>
+                    <tr>
+                        <td>Ruisk.nopeus</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>Ruisk.nopeus</td>
+                        <td>45</td>
+                    </tr>
+                    <tr>
+                        <td>Ruisk.nopeus</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>Ruisk.matkap.</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>Ruisk.matkap.</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Vaihtopiste</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>Jälkipaine1</td>
+                        <td>750</td>
+                    </tr>
+                    <tr>
+                        <td>Jälkipaine2</td>
+                        <td>500</td>
+                    </tr>
+                    <tr>
+                        <td>JP-aika1</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>JP-aika2</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>JP-nopeus1</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>JP-nopeus2</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Muotin auk.matka</td>
+                        <td>480</td>
+                    </tr>
+                    <tr>
+                        <td>Kok.jakso</td>
+                        <td>47</td>
+                    </tr>
+                    <tr>
+                        <td>Väri annos</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>x</td>
+                        <td>x</td>
+                    </tr>
+                </table>     
+            </div>
+        </aside> 
+           
+    </section>        
+
+    <footer>
+        <p>
+        Jyrki Ansamaa Web Desing, Copyright &copy; 2023
+        </p>
+    </footer>
+  
+</body>
+</html>

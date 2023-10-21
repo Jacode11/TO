@@ -1,0 +1,165 @@
+body {
+    font-family: "Lato", sans-serif;
+    padding: 0; /* tyhjä tila elementtien ja sisällön välillä */
+    margin: 0; /* tyhjä tila elementtien ulkopuolella */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+    /*background:linear-gradient(245.59deg, #616768 0%, #4c6364 28.53%, #21494b 75.52%);*/
+    /*display: flex;
+    justify-content: center;
+    align-items: center;
+    /*min-height: 100vh;*/
+    /*flex-direction: column;*/
+}
+.image {
+    background-image: url(../searchbar.img/Styreeni.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+
+h1 {
+    color: #000;
+    font-size: 50px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 50px;
+    /*background-color: #4c6364;*/
+    background: #cacaca;
+    /*margin: 10px;
+    margin-right: 20px;*/
+    border: 2px solid #000;
+    border-radius: 5px;
+    
+}
+.search-box input {
+    display: flex;
+    /*flex: 1;*/
+    width: 400px;
+    height: 50px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+   /* background: #4c6364;*/
+    border-radius: 5px;
+    padding-left: 20px;
+}
+/*span {
+    color: #1e383a;
+    position: absolute;
+    padding-left: 10px;
+    font-size: 20px;
+    pointer-events: none;
+    transition: 0.5s;
+}*/
+::placeholder {
+    color: #000;
+    padding-left: 0px;
+}
+/*.search-box input:valid ~ ::placeholder, 
+.search-box input:focus ~ ::placeholder
+{
+    color: #13d3dd;
+    transform: translateX(10px) translateY(-27px);
+    font-size: 12px;
+    padding: 0 10px;
+    background: #4c6364;
+    border-left: 1px solid #13d3dd;
+    border-right: 1px solid #13d3dd;
+}
+/**.search-box:valid, 
+.search-box:focus
+{
+    border: 2px solid #13d3dd;
+}*/
+button {
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+button .fa-solid {
+    display: flex;
+    width: 25px;
+    color: #000;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.result-box {
+    background-color: #cacaca;
+    color: #000;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+.result-box ul {
+    border-top: 1px solid #000;
+    padding: 15px 10px;
+}
+.result-box ul li {
+    list-style: none;
+    border-radius: 3px;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+.result-box ul li:hover {
+    background-color: #9eb7bb;
+}
+
+/*@media (max-width: 600px)
+{
+   nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+   }
+}
+
+@media (max-width: 400px)
+{
+   nav {
+    width: 400px;     
+   } 
+   .search-box {
+    width: 380px;  
+   }
+   .result-box {
+    width: 380px;
+   }
+}*/
+
+@media (max-width: 900px)
+{
+    .image nav .search-box .result-box
+    {
+        width: calc(10vw - 2px);
+        height: calc(10vw - 2px);
+    }
+}
+@media (max-width: 600px)
+{
+    .image nav .search-box .result-box
+    {
+        width: calc(20vw - 2px);
+        height: calc(20vw - 2px);
+    }
+}
+
+
