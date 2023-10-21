@@ -950,6 +950,7 @@ footer {
         height: auto;
     }
     .box2 {
+        display: block;
         box-sizing: border-box;
         width: 0;
         height: 0;
@@ -957,14 +958,17 @@ footer {
         border: 0;
     }
     .box2 h4 {
+        display: block;
         font-size: 0;
     }
     .box2 label {
+        display: block;
         font-size: 0;
     }
     .box2 textarea {
+        display: block;
         box-sizing: border-box;
-        width: 95%;
+        width: 0;
         height: 0px;
     }
 
