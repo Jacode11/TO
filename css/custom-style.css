@@ -905,7 +905,9 @@ footer {
         margin: 10px;
         width: 350px;
     }
-
+    .Row button {
+        padding-left: 60px;
+    }
     /*header nav {
         margin-top: 0px;
         float: none;
