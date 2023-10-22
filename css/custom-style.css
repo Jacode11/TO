@@ -329,7 +329,7 @@ span {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.8);
-    background: #fff;
+    background: #818181;
     max-width: 700px;
     width: 95%;
     z-index: 5;
