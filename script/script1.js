@@ -19,6 +19,9 @@ function func(){
     if (email == "162591"){
       window.location.assign("162591.html")
     }
+    if (email == "162622"){
+      window.location.assign("162622.html")
+    }
     if (email == "162663"){
       window.location.assign("162663.html")
     }
