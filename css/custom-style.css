@@ -989,6 +989,7 @@ footer {
     header img {
         text-align: center;
         width: 97%;
+        margin-left: 5px;
         height: 10px;
     }
     header nav {
@@ -1046,12 +1047,14 @@ footer {
         box-sizing: border-box;
         width: 97%;
         height: auto;
+        padding: 10px;
         margin-top: 0px;
     }
     .box1 {
         box-sizing: border-box;
         width: 97%;
         height: auto;
+        padding: 10px;
     }
     .box2 {
         display: none;
