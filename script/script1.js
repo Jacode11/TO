@@ -1,6 +1,9 @@
 function func(){
     var email = document.getElementById("inbut-box").value;
     
+    if (email == "9538"){
+      window.location.assign("9538.html")
+    }
     if (email == "9595"){
       window.location.assign("9595.html")
     }
