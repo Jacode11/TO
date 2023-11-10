@@ -986,11 +986,11 @@ footer {
         width: 100%;
         clear: both;
     }
-    header img {
-        text-align: center;
-        width: 97%;
-        margin-left: 5px;
-        height: 10px;
+    #branding img {
+        width: 80%;
+        height: 40px;
+        margin-left: 30px;
+        border-radius: 20px;
     }
     header nav {
         padding: 0px;
