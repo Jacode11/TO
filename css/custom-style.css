@@ -51,7 +51,8 @@ header {
      height:60px;
      -ms-transform: rotate(0deg); /* IE9 */
      -webkit-transform: rotate(0deg); /* Chrome,Safari,Opera */ /* kääntää kuvaa */
-     transform:rotate(0deg) ; /* Firefox */ 
+     transform:rotate(0deg) ; /* Firefox */
+     border-radius: 10px;
 }
 
 #branding h6 {
@@ -990,7 +991,7 @@ footer {
         width: 80%;
         height: 40px;
         margin-left: 30px;
-        border-radius: 20px;
+        border-radius: 10px;
     }
     header nav {
         padding: 0px;
